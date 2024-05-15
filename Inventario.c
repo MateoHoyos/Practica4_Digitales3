@@ -165,7 +165,7 @@ void get_transaccion(char *let, int *entrada, int *salida){
                     contA++;
                     if (*let == 'D'){
                         flag_a = false;
-                        value = convert_to_int(amplitud, 'A', 'D');
+                        value = convert_to_int(transa_in, 'A', 'D');
 
                         // solo se aceptan transaciones de un elemento o más
                         if(value > 0 ){
@@ -187,14 +187,14 @@ void get_transaccion(char *let, int *entrada, int *salida){
                     contB++;
                     if (*let == 'D'){
                         flag_b = false;
-                        value = convert_to_int(nivelDC, 'B', 'D');
+                        value = convert_to_int(transa_out, 'B', 'D');
                         if(value >= 0){
                             *salida = value; 
                         }
                         contB = 0;
                         memset(transa_out, 0, sizeof(transa_out));
                     }
-                    if (contB > 5){
+                    if (contB > 4){
                         contB = 0;
                     }
                 }

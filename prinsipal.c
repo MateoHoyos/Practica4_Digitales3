@@ -4,7 +4,6 @@
 #include "string.h"
 #include "hardware/gpio.h"
 #include "hardware/timer.h"
-#include "Led.h"
 #include "Inventario.h"
 
 uint8_t one_second  = 0; // variable global para contar segundos
@@ -44,7 +43,7 @@ int main() {
 
         //verificamos la autentificacion del usuario para poder dar acceso a la lectura de los TAG
         if (!autentificacion){
-            if (verificar_password){
+            if (verificar_password()){
                 autentificacion = true;
             }
         }
