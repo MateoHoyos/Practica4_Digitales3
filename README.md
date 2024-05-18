@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+# Practica4_Digitales3
+Gestión de Inventario con RFID
+=======
 LABORATORIO ELECTRÓNICA DIGITAL III
 DEPARTAMENTO DE INGENIERÍA ELECTRÓNICA Y TELECOMUNICACIONES
 PRÁCTICA 4 – Gestión de Inventario con RFID
+>>>>>>> 2b51f2433bd80fc8abf6182269ea99e5e31351b2
